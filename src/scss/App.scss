@@ -1,0 +1,13 @@
+// component scss
+@import "./abstracts/mixin", "./abstracts/variables";
+@import "./base/reset";
+@import "./components/header.scss";
+@import "./components/leftnavbar.scss";
+@import "./components/hero.scss";
+@import "./components/about.scss";
+@import "./components/contact.scss";
+@import "./components/jobs.scss";
+@import "./components/projects.scss";
+
+// pages scss
+@import "./page/home.scss"

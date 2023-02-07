@@ -1,0 +1,28 @@
+$font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+:root {
+  // Text Color
+  --text-1: #313740;
+  --text-2:#202022;
+  --text-3:#14140F;
+  --white: #fff;
+  --black: #000;
+
+  // Text Size
+  --fz-xxs: 12px;
+  --fz-xs: 13px;
+  --fz-sm: 14px;
+  --fz-md: 16px;
+  --fz-lg: 18px;
+  --fz-xl: 20px;
+  --fz-xxl: 22px;
+  --fz-heading: 32px;
+
+  --border-radius: 4px;
+  --nav-height: 100px;
+  --nav-scroll-height: 70px;
+
+  --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+  --border-radius: 4px;
+}

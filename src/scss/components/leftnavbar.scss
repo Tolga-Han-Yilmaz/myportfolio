@@ -1,0 +1,38 @@
+.left-navbar{
+    width: 40px;
+    position: fixed;
+    bottom: 0px;
+    left: 40px;
+    right: auto;
+    z-index: 10;
+    // color: var(--light-slate);
+    ul{
+        display: flex;
+        flex-direction: column;
+        -webkit-box-align: center;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+        li{
+            margin-bottom: 20px;
+            a{
+                padding: 10px;
+                svg{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+        &::after{
+            content: "";
+            display: block;
+            width: 1px;
+            min-height: calc(40vh);
+            margin: 0px auto;
+            background-color: var(--black);
+        }
+        li:last-child{
+            margin-bottom:40px ;
+        }
+    }
+}

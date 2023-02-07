@@ -1,0 +1,103 @@
+.header {
+  padding: 0 50px;
+  height: var(--nav-height);
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  z-index: 11;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  transition: var(--transition);
+  filter: none !important;
+  pointer-events: auto !important;
+  user-select: auto !important;
+  .nav {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    color: var(--text-1);
+    font-family: var(--font-mono);
+    counter-reset: item 0;
+    z-index: 12;
+    .header-left {
+      display: flex;
+      -webkit-box-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      align-items: center;
+      a {
+        color: var(--green);
+        width: 42px;
+        height: 42px;
+        img {
+          max-width: 42px;
+        }
+      }
+    }
+    .header-right {
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      ul {
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        align-items: center;
+        padding: 0px;
+        margin: 0px;
+        list-style: none;
+        li {
+          margin: 0px 5px;
+          position: relative;
+          counter-increment: item 1;
+          font-size: var(--fz-xs);
+          a {
+            padding: 10px;
+            text-decoration: none;
+            color: var(--black);
+            font-weight: 700;
+            p {
+              color: var(--text-1);
+
+              margin: 0 0 0 5px;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+      div {
+        transition: var(--transition);
+
+        &:hover {
+          -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+        }
+
+        .resume-button {
+          color: var(--black);
+          background-color: transparent;
+          border: 1px solid var(--black);
+          border-radius: var(--border-radius);
+          padding: 0.75rem 1rem;
+          font-family: var(--font-mono);
+          line-height: 1;
+          text-decoration: none;
+          cursor: pointer;
+          transition: var(--transition);
+          margin-left: 15px;
+          font-size: var(--fz-xs);
+          position: relative;
+        }
+      }
+    }
+  }
+}
