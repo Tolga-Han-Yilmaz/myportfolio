@@ -5,7 +5,7 @@ import me from "../assets/tolgahanyilmaz.png";
 const About = () => {
   return (
     <section className="about" id="about">
-      <h2 className="about-heading">About Me</h2>
+      <h2 className="numbered-heading">About Me</h2>
       <div className="about-inner">
         <div className="about-inner--text">
           <div>
