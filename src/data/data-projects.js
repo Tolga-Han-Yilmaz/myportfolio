@@ -2,19 +2,19 @@ const projects = [
     {
         id:100,
         img:"./images/project-1.png",
-        title:"title",
-        description:"description",
-        repoLink:"https://www.youtube.com/watch?v=zd-h01o7LtI&list=RDpz95u3UVpaM&index=12",
-        applink:"https://github.com/Tolga-Han-Yilmaz/REACT-PROJECTS",
+        title:"Social Media",
+        description:"I aimed to make a blog page where everyone can share and see the posts, After logging in, the user can share as he wishes. You can delete and update your posts,You can also access current news on the right side of my web page.",
+        repoLink:"https://github.com/Tolga-Han-Yilmaz/social-media",
+        applink:"https://thy-blog.vercel.app/",
         tools:[
             {
-                tool1:"tool1"
+                tool1:"Redux-Toolkit"
             },
             {
-                tool2:"tool2"
+                tool2:"Firebase"
             },
             {
-                tool3:"tool3"
+                tool3:"Material UI"
             }
         ]
 
