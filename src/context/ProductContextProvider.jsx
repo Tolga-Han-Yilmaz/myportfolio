@@ -18,7 +18,6 @@ const ProductContextProvider = ({ children }) => {
     return item.title;
   });
  
-
   const values = {
     projectsItems
     
