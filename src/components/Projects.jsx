@@ -3,17 +3,18 @@ import "../scss/components/projects.scss";
 import { useProductContext } from "../context/ProductContextProvider";
 import external from "../assets/external.png";
 import github from "../assets/github.png";
+import { ReactComponent as Folder } from "../assets/folder.svg";
+
 
 const Projects = () => {
   const { projectsItems } = useProductContext();
-  console.log(projectsItems);
 
   return (
     <section id="projects" className="projects">
       <h2 className="numbered-heading">Some Things I've Built</h2>
       <ul className="projects-box">
         {projectsItems?.map((project) => {
-          const { id, img, title, description, repoLink, appLink, tools } =
+          const { id, img, title, description, repoLink, appLink, tools,repoSvg,appSvg} =
             project;
           return (
             <li className="projects-box--item d-flex" key={id}>
@@ -28,22 +29,20 @@ const Projects = () => {
                   <p>{description}</p>
                 </div>
                 <ul className="project-tech-list">
-                  {tools?.map((tool) => {
+                  {tools?.map((item) => {
                     return (
-                      <>
-                        <li>{tool.tool1}</li>
-                        <li>{tool.tool2}</li>
-                        <li>{tool.tool3}</li>
-                      </>
+                        <li>{item.tool}</li>
+                        
+                      
                     );
                   })}
                 </ul>
                 <div className="projects-links">
                   <a href={repoLink} target="_blank" rel="noopener noreferrer">
-                    <img src={external} alt={title} />
+                    {repoSvg}
                   </a>
                   <a href={appLink} target="_blank" rel="noopener noreferrer">
-                    <img src={github} alt={title} />{" "}
+                    {appSvg}
                   </a>
                 </div>
               </div>
@@ -68,27 +67,16 @@ const Projects = () => {
               <header>
                 <div className="project-top">
                   <div className="folder">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      role="img"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="feather feather-folder"
-                    >
-                      <title>Folder</title>
-                      <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
-                    </svg>
+                    <Folder/>
                   </div>
                   <div className="project-links">
                     <a
                       href="http://"
                       target="_blank"
                       rel="noopener noreferrer"
-                    ></a>
+                    >
+                    </a>
+
                   </div>
                 </div>
                 <h3 className="project-title">
