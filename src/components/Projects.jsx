@@ -56,13 +56,18 @@ const Projects = () => {
         })}
       </ul>
 
+{/* OTHER PROJECTS */}
       <div className="other-projects">
         <h2>Other Noteworthy Projects</h2>
         <a href="/archive" className="archive-link">
           view the archive
         </a>
         <ul className="projects-grid">
-          <li className="other-projects-item">
+        {projectsItems?.map((project) => {
+          const { id, img, title, description, repoLink, appLink, tools,repoSvg,appSvg} =
+            project;
+          return (
+          <li className="other-projects-item" key={id}>
             <div className="project-inner">
               <header>
                 <div className="project-top">
@@ -75,6 +80,14 @@ const Projects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
+                      {repoSvg}
+                    </a>
+                    <a
+                      href="http://"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {appSvg}
                     </a>
 
                   </div>
@@ -84,20 +97,29 @@ const Projects = () => {
                     href="http://"
                     target="_blank"
                     rel="noopener noreferrer"
-                  ></a>
+                  >{title}</a>
                 </h3>
                 <div className="project-description">
-                  <p></p>
+                  <p>{description}</p>
                 </div>
               </header>
 
               <footer>
                 <ul className="project-tech-list">
-                  <li></li>
+                  {
+                    tools.map((item)=>{
+                      return(
+                        <li>{item.tool}</li>
+
+                      )
+                    })
+                  }
                 </ul>
               </footer>
             </div>
           </li>
+          );
+        })}
         </ul>
       </div>
     </section>
