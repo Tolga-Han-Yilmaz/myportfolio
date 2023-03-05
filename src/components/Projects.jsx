@@ -12,7 +12,7 @@ const Projects = () => {
   return (
     <section id="projects" className="projects">
       <h2 className="numbered-heading">Some Things I've Built</h2>
-      <ul className="projects-box">
+      {/* <ul className="projects-box">
         {projectsItems?.map((project) => {
           const { id, img, title, description, repoLink, appLink, tools,repoSvg,appSvg} =
             project;
@@ -54,17 +54,17 @@ const Projects = () => {
             </li>
           );
         })}
-      </ul>
+      </ul> */}
 
 {/* OTHER PROJECTS */}
       <div className="other-projects">
-        <h2>Other Noteworthy Projects</h2>
+        {/* <h2>Other Noteworthy Projects</h2> */}
         <a href="/archive" className="archive-link">
           view the archive
         </a>
         <ul className="projects-grid">
         {projectsItems?.map((project) => {
-          const { id, img, title, description, repoLink, appLink, tools,repoSvg,appSvg} =
+          const { id,  title, description,  tools,repoSvg,appSvg} =
             project;
           return (
           <li className="other-projects-item" key={id}>

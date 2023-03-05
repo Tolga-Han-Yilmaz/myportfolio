@@ -3,6 +3,8 @@ import "../scss/components/header.scss";
 import me from "../assets/tolgahanyilmaz.png";
 
 const Header = () => {
+
+
   return (
     <header className="header w-100">
       <nav className="nav w-100 d-flex justify-content-between">
@@ -14,32 +16,36 @@ const Header = () => {
         <div className="header-right d-flex">
           <ul className="d-flex gap-4">
             <li>
-              <a href="" className="d-flex">
+              <a href="/#about" className="d-flex">
                 01.
                 <p>About</p>
               </a>
             </li>
             <li>
-              <a href="" className="d-flex">
+              <a href="/#jobs" className="d-flex">
                 02.
                 <p>Experience</p>
               </a>
             </li>
             <li>
-              <a href="" className="d-flex">
+              <a href="/#projects" className="d-flex">
                 03.
                 <p>Work</p>
               </a>
             </li>
             <li>
-              <a href="" className="d-flex">
+              <a href="/#contact" className="d-flex">
                 04.
                 <p>Contact</p>
               </a>
             </li>
           </ul>
           <div>
-            <a href="" className="resume-button" target="_blank">
+            <a
+              href="/images/Resume.docx"
+              className="resume-button"
+              download
+            >
               Resume
             </a>
           </div>

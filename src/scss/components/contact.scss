@@ -1,0 +1,28 @@
+.contact{
+    max-width: 600px;
+    text-align: center;
+    margin: 0px auto 100px;
+    .title{
+        font-size: clamp(40px,5vw,60px);
+    }
+   .email-link{
+    color: var(--text-3);
+    background-color: transparent;
+    border: 1px solid var(--text-3);
+    border-radius: var(--border-radius);
+    padding: 1.25rem 1.75rem;
+    font-size: var(--fz-sm);
+    font-family: var(--font-mono);
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    transition: var(--transition);
+    margin-top: 50px;
+    &:hover{
+        transform: translateY(5px);
+    }
+   }
+   p{
+    margin-bottom: 50px;
+   }
+}
