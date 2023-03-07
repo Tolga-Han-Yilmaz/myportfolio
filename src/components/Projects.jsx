@@ -1,8 +1,6 @@
 import React from "react";
 import "../scss/components/projects.scss";
 import { useProductContext } from "../context/ProductContextProvider";
-import external from "../assets/external.png";
-import github from "../assets/github.png";
 import { ReactComponent as Folder } from "../assets/folder.svg";
 
 
@@ -57,9 +55,9 @@ const Projects = () => {
       </ul> */}
 
 {/* OTHER PROJECTS */}
-      <div className="other-projects">
+      <div className="other-projects mb-4">
         {/* <h2>Other Noteworthy Projects</h2> */}
-        <a href="/archive" className="archive-link">
+        <a href="/archive" className="archive-link d-none">
           view the archive
         </a>
         <ul className="projects-grid">
@@ -121,6 +119,10 @@ const Projects = () => {
           );
         })}
         </ul>
+      </div>
+      <div className="show-more text-center">
+
+      <a href="https://github.com/Tolga-Han-Yilmaz" rel="noopener noreferrer" target="_blank">Show More</a>
       </div>
     </section>
   );

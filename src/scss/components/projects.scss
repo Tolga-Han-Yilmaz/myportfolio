@@ -261,3 +261,11 @@
     }
   }
 }
+.show-more{
+  margin-top: 75px;
+  a{
+    border-radius: var(--border-radius);
+    border: 1px solid var(--text-1);
+    padding: 0.75rem 1rem;
+  }
+}

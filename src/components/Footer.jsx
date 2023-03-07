@@ -6,8 +6,8 @@ import { ReactComponent as Linkedin } from "../assets/linkedin.svg";
 const Footer = () => {
   return (
     <footer className="d-flex justify-content-center align-items-center flex-column text-center">
-      <div className="mobile-social-media d-none d-md-flex">
-        <ul>
+      <div className="mobile-social-media d-block d-md-none">
+        <ul className="d-flex align-items-center gap-4 p-0">
           <li>
             <a
               href="https://github.com/Tolga-Han-Yilmaz"

@@ -5,7 +5,7 @@ import { ReactComponent as Linkedin } from "../assets/linkedin.svg";
 
 const LeftNavbar = () => {
   return (
-    <div className="left-navbar">
+    <div className="left-navbar d-none d-md-block">
       <ul>
         <li>
           <a href="https://github.com/Tolga-Han-Yilmaz">

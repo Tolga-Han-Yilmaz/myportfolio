@@ -3,7 +3,7 @@ import "../scss/components/rightnavbar.scss"
 
 const RightNavbar = () => {
   return (
-    <div className="rightnavbar">
+    <div className="rightnavbar d-none d-md-block">
       <div className="d-flex flex-column align-items-center position-relative">
         <a
           href="mailto:06thy40@gmail.com"

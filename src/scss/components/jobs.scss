@@ -37,6 +37,10 @@
         line-height: 1.3;
         .company {
           color: var(--text-4);
+          a{
+            color: var(--text-3);
+
+          }
         }
       }
       p{

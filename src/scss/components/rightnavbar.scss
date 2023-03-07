@@ -15,12 +15,14 @@
     letter-spacing: 0.1em;
     -webkit-writing-mode: vertical-rl;
     writing-mode: vertical-rl;
+    color: var(--text-3);
+
 }
 &::after {
   content: "";
   display: block;
   width: 1px;
-  height: 90px;
+  height: 40vh;
   margin: 0px auto;
   background-color: var(--text-3);
 }
