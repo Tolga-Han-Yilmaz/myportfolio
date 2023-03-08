@@ -13,7 +13,7 @@ const Header = () => {
             <img src={me} alt="logo" />
           </a>
         </div>
-        <div className="header-right d-flex">
+        <div className="header-right d-none d-md-flex">
           <ul className="d-flex gap-4">
             <li>
               <a href="/#about" className="d-flex">
@@ -49,6 +49,14 @@ const Header = () => {
               Resume
             </a>
           </div>
+        </div>
+        <div className="mobile-menu d-md-none">
+          <button className="mobile-menu-button">
+            <div className="ham-box">
+              <div className="ham-box-inner"></div>
+            </div>
+          </button>
+          <aside className="mobile-menu-sidebar"></aside>
         </div>
       </nav>
     </header>

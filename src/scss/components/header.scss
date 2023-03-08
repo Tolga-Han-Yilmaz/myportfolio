@@ -104,4 +104,30 @@
       }
     }
   }
+  .mobile-menu{
+    &-button{
+      display: flex;
+      -webkit-box-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      align-items: center;
+      position: relative;
+      z-index: 10;
+      margin-right: -15px;
+      padding: 15px;
+      border: 0px;
+      background-color: transparent;
+      color: inherit;
+      text-transform: none;
+      transition-timing-function: linear;
+      transition-duration: 0.15s;
+      transition-property: opacity, filter;
+      .ham-box{
+        display: inline-block;
+    position: relative;
+    width: var(--hamburger-width);
+    height: 24px;
+      }
+    }
+  }
 }
