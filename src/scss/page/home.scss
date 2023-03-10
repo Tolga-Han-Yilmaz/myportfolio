@@ -1,53 +1,53 @@
-.main{
+.main {
+  margin: 0px auto;
+  width: 100%;
+  max-width: 1600px;
+  min-height: 100vh;
+  padding: 0px 150px;
+  counter-reset: section;
+  @media only screen and (max-width: 769px) {
+    padding: 0 50px;
+  }
+  @media only screen and (max-width: 480px) {
+    padding: 0 25px;
+  }
+  section {
+    margin-bottom: 50px;
     margin: 0px auto;
-    width: 100%;
-    max-width: 1600px;
-    min-height: 100vh;
-    padding: 0px 150px;
-    counter-reset: section;
-    @media only screen and (max-width: 769px){
-      padding: 0 50px;
+    .numbered-heading {
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      position: relative;
+      margin: 10px 0px 40px;
+      width: 100%;
+      font-size: clamp(26px, 5vw, var(--fz-heading));
+      white-space: nowrap;
+      &:before {
+        counter-increment: section 1;
+        content: "0" counter(section) ".";
+        margin-right: 10px;
+        color: var(--text-1);
+        font-family: var(--font-mono);
+        font-size: clamp(var(--fz-md), 3vw, var(--fz-xl));
+        font-weight: 400;
+      }
+      &:after {
+        content: "";
+        display: block;
+        width: 300px;
+        height: 1px;
+        margin-left: 20px;
+        background-color: var(--text-1);
+        color: var(--text-1);
+      }
     }
-    @media only screen and (max-width: 480px){
-      padding: 0 25px;
-    }
-    section{
-        margin-bottom: 50px;
-        margin: 0px auto;
-        .numbered-heading {
-            display: flex;
-            -webkit-box-align: center;
-            align-items: center;
-            position: relative;
-            margin: 10px 0px 40px;
-            width: 100%;
-            font-size: clamp(26px, 5vw, var(--fz-heading));
-            white-space: nowrap;
-            &:before {
-              counter-increment: section 1;
-              content: "0" counter(section) ".";
-              margin-right: 10px;
-              color: var(--text-1);
-              font-family: var(--font-mono);
-              font-size: clamp(var(--fz-md), 3vw, var(--fz-xl));
-              font-weight: 400;
-            }
-            &:after {
-              content: "";
-              display: block;
-              width: 300px;
-              height: 1px;
-              margin-left: 20px;
-              background-color: var(--text-1);
-              color: var(--text-1);
-            }
-          }
-    }
+  }
 }
-a{
+a {
   text-decoration: none;
 }
 
-.blur{
-filter: blur(4px);
+.blur {
+  filter: blur(4px);
 }

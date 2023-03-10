@@ -1,6 +1,5 @@
 import React from "react";
 import "../scss/components/header.scss";
-import me from "../assets/tolgahanyilmaz.png";
 import { useProductContext } from "../context/ProductContextProvider";
 
 
@@ -14,7 +13,8 @@ const Header = () => {
       <nav className="nav w-100 d-flex justify-content-between">
         <div className="header-left">
           <a href="/">
-            <img src={me} alt="logo" />
+            
+            THY
           </a>
         </div>
         <div className="header-right d-none d-md-flex">

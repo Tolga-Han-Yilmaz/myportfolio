@@ -6,6 +6,7 @@ body {
   width: 100%;
   min-height: 100%;
   overflow-x: hidden;
+
 }
 
 html {
@@ -24,14 +25,12 @@ html {
 /* Scrollbar Styles */
 html {
   scrollbar-width: thin;
-  //   scrollbar-color: var(--dark-slate) var(--navy);
+
 }
 ::-webkit-scrollbar {
   width: 12px;
 }
-::-webkit-scrollbar-track {
-  //   background: var(--navy);
-}
+
 
 ul {
   list-style-type: none;
