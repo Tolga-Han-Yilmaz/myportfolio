@@ -14,12 +14,23 @@ export const useProductContext = () => {
 const ProductContextProvider = ({ children }) => {
   const [projectsItems, setProjectsItems] = useState(projects);
 
+  const [aside, setAside] = useState(true);
+
+  const handleAside = () => {
+    if (aside) {
+      setAside(false);
+    } else {
+      setAside(true);
+    }
+  };
+
   const allCategories = projects.map((item) => {
     return item.title;
   });
  
   const values = {
-    projectsItems
+    projectsItems,
+    handleAside,aside
     
   };
   return (
