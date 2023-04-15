@@ -17,7 +17,7 @@ const Hero = () => {
         <p>
         I’m currently improving my React, JavaScript, Python, HTML, CSS, Bootstrap, Material UI skills.        </p>
         <p>
-        Currently, I am working as a front end developer at <a href="https://www.mazakayazilim.com/">Mazaka Software.</a> 
+        Currently, I am working as a front end developer at <a href="https://www.upwork.com/">Upwork.</a> 
         </p>
       </div>
       
